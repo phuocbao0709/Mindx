@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-name {
+  width: 254px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 36px;
+  font-style: bold;
+  margin-top: 20px;
+}
+.nav-menu {
+  flex-grow: 1;
+}
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  gap: 30px;
+}
+
+.link-item {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.icon img.user-img {
+  width: 40px;
+  height: auto;
+}
+.user {
+  font-size: 18px;
+  color: #7200b8;
+}
+.icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+.sidebar-item,
+.logout li {
+  font-weight: bold;
+  list-style-type: none;
+  padding: 7px 15px;
+}
+
+.sidebar-item a,
+.logout a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.sidebar-item:hover,
+.logout li:hover {
+  background-color: #7200b8;
+  width: 100%;
+  border-radius: 10px;
+}
+.sidebar-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.logout {
+  width: 100%;
+  padding: 7px 15px;
+}
+.sidebar {
+  background-color: black;
+  width: 254px;
+  height: 783px;
+  border-radius: 10px;
+  /* padding: 30px; */
+  padding: 30px 15px;
+  position: relative;
+}
+
+.list-sidebar {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.logout {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.body {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.form1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h1.title {
+  font-size: 24px;
+  font-weight: bold;
+  width: 138px;
+  height: 36px;
+}
+
+button {
+  border: 1px solid #7200b8;
+  background: none;
+  border-radius: 10px;
+  /* width: 226px;
+  height: 50px; */
+  padding: 10px 20px;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.form2 {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.loan {
+  background-color: black;
+  /* width: 233px;
+  height: 96px; */
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 30px 65px;
+  font-weight: 700;
+}
+
+.repayment {
+  background-color: black;
+  /* width: 233px;
+  height: 96px; */
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 30px 65px;
+  font-weight: 700;
+}
+
+.percentage {
+  background-color: black;
+  /* width: 233px;
+  height: 96px; */
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 30px 65px;
+  font-weight: 700;
+}
+
+.form3 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.form3 .box.form3-3 {
+  margin-left: 20px;
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 18px;
+}
+
+.form3 .box {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  /* height: fit-content; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.form3 .box.form3-1,
+.form3 .box.form3-2 {
+  width: 345px;
+  height: 321px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.form3 .title-form3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.form3 .box.form3-3 p {
+  font-size: 15px;
+}
+
+.form4 .form4-1 {
+  background-color: black;
+  color: white;
+  width: 412px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form4 {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 150px;
+}
+
+.chat {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.chat p {
+  color: #7200b880;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.chat img {
+  width: 50px;
+  height: 50px;
+}
