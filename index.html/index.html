@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: blue;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cach 1: viet event trong the mo cua HTML -->
+    <button id="btn-1" onclick="console.log('hello');">Click me!</button>
+
+    <script>
+      const btn1 = document.getElementById("btn-1");
+      console.log({ btn1 });
+
+      // * Cách 2: gắn sự kiện bằng JS
+      btn1.onclick = function () {
+        console.log("abc");
+      };
+      btn1.onclick = function () {
+        console.log("xyz");
+      };
+      btn1.onclick = function () {
+        console.log("alo");
+      };
+      console.log({ btn1 });
+
+      // * Cach 3: Sử dụng addEventListener
+      btn1.addEventListener("click", function () {
+        console.log(event);
+        console.log("Xin chao ca lop!");
+      });
+
+      btn1.addEventListener("click", function () {
+        console.log("Xin chao ca lop lan 2!");
+      });
+    </script>
+  </body>
+</html>
